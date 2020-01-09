@@ -1,0 +1,2 @@
+#!bin/bash
+echo -e "\nalias urban=\"python3 `pwd`/urban.py \$1\"" >> ~/.bashrc
