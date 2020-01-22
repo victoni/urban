@@ -3,7 +3,11 @@ from bs4 import BeautifulSoup
 from sys import argv
 from re import sub
 
-term = argv[1]
+#term = argv[1]
+term = ''
+for i in argv[1:]:
+	term += i + '+'
+term = term[:-1]
 
 url = "https://www.urbandictionary.com/define.php?term={}".format(term)
 
